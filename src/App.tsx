@@ -10,7 +10,7 @@ import { SearchBooksPage } from './layouts/SearchBookPage/SearchBookPage';
 // import { ShelfPage } from './layouts/BookCheckoutPage/ShelfPage';
 // import { MessagesPage } from './layouts/MessagesPage/MessagesPage';
 // import { ManageLibraryPage } from './layouts/ManageLibraryPage/ManageLibraryPage';
-import { Auth0Provider, withAuthenticationRequired } from '@auth0/auth0-react';
+import { Auth0Provider } from '@auth0/auth0-react';
 
 import { auth0Config } from './lib/auth0Config';
 import LoginPage from './Auth/LoginPage';

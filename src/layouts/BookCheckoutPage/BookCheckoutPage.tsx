@@ -20,7 +20,7 @@ export const BookCheckoutPage = () => {
 
   // Reviews State
   const [reviews, setReviews] = useState<ReviewModel[]>([]);
-  const [totalStars, setTotalStars] = useState(0);
+  const [ , setTotalStars] = useState(0);
   const [isLoadingReview, setIsLoadingReview] = useState(true);
 
   const [isReviewLeft, setIsReviewLeft] = useState(false);
