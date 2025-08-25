@@ -39,9 +39,9 @@ const Auth0ProviderWithHistory = ({ children }: { children: React.ReactNode }) =
   );
 };
 
-const SecureRoute = ({ component, path, ...args }: { component: React.ComponentType<any>, path: string }) => (
+/* const SecureRoute = ({ component, path, ...args }: { component: React.ComponentType<any>, path: string }) => (
   <Route path={path} component={withAuthenticationRequired(component)} {...args} />
-);
+); */
 
 export const App = () => {
 

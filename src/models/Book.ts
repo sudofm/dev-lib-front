@@ -16,7 +16,7 @@ class Book {
         this.title = title
         this.author = author;
         this.descritption = descritption;
-        this.copies;
+        this.copies = copies;
         this.copiesAvailable = copiesAvailable;
         this.category = category;
         this.img = img;
