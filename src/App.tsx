@@ -6,7 +6,7 @@ import { HomePage } from './layouts/HomePage/HomePage';
 import { Footer } from './layouts/NavBarAndFooter/Footer';
 import { Navbar } from './layouts/NavBarAndFooter/Navbar';
 import { SearchBooksPage } from './layouts/SearchBookPage/SearchBookPage';
-// import { ReviewListPage } from './layouts/BookCheckoutPage/LatestReviews';
+
 // import { ShelfPage } from './layouts/BookCheckoutPage/ShelfPage';
 // import { MessagesPage } from './layouts/MessagesPage/MessagesPage';
 // import { ManageLibraryPage } from './layouts/ManageLibraryPage/ManageLibraryPage';
@@ -14,6 +14,7 @@ import { Auth0Provider } from '@auth0/auth0-react';
 
 import { auth0Config } from './lib/auth0Config';
 import LoginPage from './Auth/LoginPage';
+import { ReviewListPage } from './layouts/BookCheckoutPage/ReviewListPage/ReviewListPage';
 
 
 const Auth0ProviderWithHistory = ({ children }: { children: React.ReactNode }) => {
@@ -60,9 +61,9 @@ export const App = () => {
           <Route path='/search'>
             <SearchBooksPage />
           </Route>
-         {/*  <Route path='/reviewlist/:bookId'>
-            <ReviewListPage/>
-          </Route> */}
+          <Route path='/reviewlist/:bookId'>
+             <ReviewListPage/>
+          </Route>
           <Route path='/checkout/:bookId'>
             <BookCheckoutPage/>
           </Route>
